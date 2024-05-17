@@ -1,13 +1,25 @@
 package main
 
-// validParentheses "LeetCode/20_Valid_Parentheses"
+// import (
+// 	validParentheses "LeetCode/20_Valid_Parentheses"
+// 	"fmt"
+// )
+// import (
 // removeElement "LeetCode/27_Remove_Element"
+// 	"fmt"
+// )
+// import (
+// 	singlenumber "LeetCode/136_Single_Number"
+// 	"fmt"
+// )
+// import (
+// palindromeLinkedList "LeetCode/234_Palindrome_Linked_List"
+// 	"fmt"
+// )
 import (
-	singlenumber "LeetCode/136_Single_Number"
+	finalvalueofvariableafterperformingoperations "LeetCode/2011_Final_Value_of_Variable_After_Performing_Operations"
 	"fmt"
 )
-
-// palindromeLinkedList "LeetCode/234_Palindrome_Linked_List"
 
 func main() {
 	//20題
@@ -19,8 +31,8 @@ func main() {
 	// fmt.Println(removeElement.RemoveElement(num, 1))
 
 	//136題
-	num := []int{1, 2, 4, 1, 2}
-	fmt.Println(singlenumber.SingleNumber(num))
+	// num := []int{1, 2, 4, 1, 2}
+	// fmt.Println(singlenumber.SingleNumber(num))
 
 	//234題
 	// e := palindromeLinkedList.ListNode{
@@ -45,4 +57,8 @@ func main() {
 	// 	Next: &b,
 	// }
 	// fmt.Println(palindromeLinkedList.IsPalindrome(&a))
+
+	//2011題
+	operations := []string{"X++", "++X", "--X", "X--"}
+	fmt.Println(finalvalueofvariableafterperformingoperations.FinalValueAfterOperations(operations))
 }
