@@ -8,6 +8,11 @@ package main
 // removeElement "LeetCode/27_Remove_Element"
 // 	"fmt"
 // )
+import (
+	besttimetobuyandsellstock "LeetCode/121_Best_Time_to_Buy_and_Sell_Stock"
+	"fmt"
+)
+
 // import (
 // 	singlenumber "LeetCode/136_Single_Number"
 // 	"fmt"
@@ -16,10 +21,14 @@ package main
 // palindromeLinkedList "LeetCode/234_Palindrome_Linked_List"
 // 	"fmt"
 // )
-import (
-	finalvalueofvariableafterperformingoperations "LeetCode/2011_Final_Value_of_Variable_After_Performing_Operations"
-	"fmt"
-)
+// import (
+// 	finalvalueofvariableafterperformingoperations "LeetCode/2011_Final_Value_of_Variable_After_Performing_Operations"
+// 	"fmt"
+// )
+// import (
+// 	maximumnumberofwordsfoundinsentences "LeetCode/2114_Maximum_Number_of_Words_Found_in_Sentences"
+// 	"fmt"
+// )
 
 func main() {
 	//20題
@@ -29,6 +38,10 @@ func main() {
 	//27題  題目怪怪的先不寫
 	// num := []int{1, 2, 3, 4, 4}
 	// fmt.Println(removeElement.RemoveElement(num, 1))
+
+	//121題
+	prices := []int{7, 1, 5, 3, 6, 4}
+	fmt.Println(besttimetobuyandsellstock.MaxProfit(prices))
 
 	//136題
 	// num := []int{1, 2, 4, 1, 2}
@@ -59,6 +72,10 @@ func main() {
 	// fmt.Println(palindromeLinkedList.IsPalindrome(&a))
 
 	//2011題
-	operations := []string{"X++", "++X", "--X", "X--"}
-	fmt.Println(finalvalueofvariableafterperformingoperations.FinalValueAfterOperations(operations))
+	// operations := []string{"X++", "++X", "--X", "X--"}
+	// fmt.Println(finalvalueofvariableafterperformingoperations.FinalValueAfterOperations(operations))
+
+	//2114題
+	// sentences := []string{"alice and bob love leetcode", "i think so too", "this is great thanks very much"}
+	// fmt.Println(maximumnumberofwordsfoundinsentences.MostWordsFound(sentences))
 }
