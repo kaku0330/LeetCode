@@ -1,10 +1,9 @@
 package main
 
-import (
-	twoSum "LeetCode/1_Two_Sum"
-	"fmt"
-)
-
+// import (
+// 	twoSum "LeetCode/1_Two_Sum"
+// 	"fmt"
+// )
 // import (
 // 	validParentheses "LeetCode/20_Valid_Parentheses"
 // 	"fmt"
@@ -17,15 +16,23 @@ import (
 // 	besttimetobuyandsellstock "LeetCode/121_Best_Time_to_Buy_and_Sell_Stock"
 // 	"fmt"
 // )
-
 // import (
 // 	singlenumber "LeetCode/136_Single_Number"
+// 	"fmt"
+// )
+// import (
+// 	containsduplicate "LeetCode/217_Contains_Duplicate"
 // 	"fmt"
 // )
 // import (
 // palindromeLinkedList "LeetCode/234_Palindrome_Linked_List"
 // 	"fmt"
 // )
+import (
+	validanagram "LeetCode/242_Valid_Anagram"
+	"fmt"
+)
+
 // import (
 // 	finalvalueofvariableafterperformingoperations "LeetCode/2011_Final_Value_of_Variable_After_Performing_Operations"
 // 	"fmt"
@@ -37,8 +44,8 @@ import (
 
 func main() {
 	//1題
-	nums := []int{3, 3}
-	fmt.Println(twoSum.TwoSum(nums, 6))
+	// nums := []int{3, 3}
+	// fmt.Println(twoSum.TwoSum(nums, 6))
 
 	//20題
 	// s := "))"
@@ -56,6 +63,9 @@ func main() {
 	// num := []int{1, 2, 4, 1, 2}
 	// fmt.Println(singlenumber.SingleNumber(num))
 
+	//217題
+	// nums := []int{1, 1, 1, 3, 3, 4, 3, 2, 4, 2}
+	// fmt.Println(containsduplicate.ContainsDuplicate(nums))
 	//234題
 	// e := palindromeLinkedList.ListNode{
 	// 	Val:  1,
@@ -79,6 +89,10 @@ func main() {
 	// 	Next: &b,
 	// }
 	// fmt.Println(palindromeLinkedList.IsPalindrome(&a))
+
+	//242題
+	s, t := "rat", "cat"
+	fmt.Println(validanagram.IsAnagram(s, t))
 
 	//2011題
 	// operations := []string{"X++", "++X", "--X", "X--"}
