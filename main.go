@@ -91,7 +91,7 @@ func main() {
 	// fmt.Println(palindromeLinkedList.IsPalindrome(&a))
 
 	//242題
-	s, t := "rat", "cat"
+	s, t := "anagram", "nagaram"
 	fmt.Println(validanagram.IsAnagram(s, t))
 
 	//2011題
