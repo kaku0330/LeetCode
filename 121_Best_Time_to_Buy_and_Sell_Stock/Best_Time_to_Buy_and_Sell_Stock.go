@@ -7,15 +7,15 @@ func MaxProfit(prices []int) int {
 	// }
 	minIndex, maxIndex := 0, 0
 	for i := 0; i < len(prices); i++ {
-		if prices[minIndex] > prices[i] {
+		if prices[minIndex] < prices[i] {
 			minIndex = i
 		}
-		if prices[maxIndex] < prices[i] {
+		if prices[maxIndex] > prices[i] && maxIndex > minIndex {
 			maxIndex = i
 		}
 	}
 
-	if maxIndex > minIndex {
+	if maxIndex < minIndex {
 		return 0
 	}
 	return prices[maxIndex] - prices[minIndex]

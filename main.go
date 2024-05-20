@@ -1,5 +1,10 @@
 package main
 
+import (
+	twoSum "LeetCode/1_Two_Sum"
+	"fmt"
+)
+
 // import (
 // 	validParentheses "LeetCode/20_Valid_Parentheses"
 // 	"fmt"
@@ -8,10 +13,10 @@ package main
 // removeElement "LeetCode/27_Remove_Element"
 // 	"fmt"
 // )
-import (
-	besttimetobuyandsellstock "LeetCode/121_Best_Time_to_Buy_and_Sell_Stock"
-	"fmt"
-)
+// import (
+// 	besttimetobuyandsellstock "LeetCode/121_Best_Time_to_Buy_and_Sell_Stock"
+// 	"fmt"
+// )
 
 // import (
 // 	singlenumber "LeetCode/136_Single_Number"
@@ -31,6 +36,10 @@ import (
 // )
 
 func main() {
+	//1題
+	nums := []int{3, 3}
+	fmt.Println(twoSum.TwoSum(nums, 6))
+
 	//20題
 	// s := "))"
 	// fmt.Println(validParentheses.IsValid(s))
@@ -40,8 +49,8 @@ func main() {
 	// fmt.Println(removeElement.RemoveElement(num, 1))
 
 	//121題
-	prices := []int{7, 1, 5, 3, 6, 4}
-	fmt.Println(besttimetobuyandsellstock.MaxProfit(prices))
+	// prices := []int{7, 1, 5, 3, 6, 4}
+	// fmt.Println(besttimetobuyandsellstock.MaxProfit(prices))
 
 	//136題
 	// num := []int{1, 2, 4, 1, 2}
