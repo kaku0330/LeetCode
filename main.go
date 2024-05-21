@@ -13,6 +13,10 @@ package main
 // 	"fmt"
 // )
 // import (
+// 	groupanagrams "LeetCode/49_Group_Anagrams"
+// 	"fmt"
+// )
+// import (
 // 	besttimetobuyandsellstock "LeetCode/121_Best_Time_to_Buy_and_Sell_Stock"
 // 	"fmt"
 // )
@@ -20,6 +24,11 @@ package main
 // 	singlenumber "LeetCode/136_Single_Number"
 // 	"fmt"
 // )
+import (
+	minstack "LeetCode/155_Min_Stack"
+	"fmt"
+)
+
 // import (
 // 	containsduplicate "LeetCode/217_Contains_Duplicate"
 // 	"fmt"
@@ -28,11 +37,10 @@ package main
 // palindromeLinkedList "LeetCode/234_Palindrome_Linked_List"
 // 	"fmt"
 // )
-import (
-	validanagram "LeetCode/242_Valid_Anagram"
-	"fmt"
-)
-
+// import (
+// 	validanagram "LeetCode/242_Valid_Anagram"
+// 	"fmt"
+// )
 // import (
 // 	finalvalueofvariableafterperformingoperations "LeetCode/2011_Final_Value_of_Variable_After_Performing_Operations"
 // 	"fmt"
@@ -55,6 +63,9 @@ func main() {
 	// num := []int{1, 2, 3, 4, 4}
 	// fmt.Println(removeElement.RemoveElement(num, 1))
 
+	//49題
+	// strs := []string{"eat", "tea", "tan", "ate", "nat", "bat"}
+	// fmt.Println(groupanagrams.GroupAnagrams(strs))
 	//121題
 	// prices := []int{7, 1, 5, 3, 6, 4}
 	// fmt.Println(besttimetobuyandsellstock.MaxProfit(prices))
@@ -62,6 +73,28 @@ func main() {
 	//136題
 	// num := []int{1, 2, 4, 1, 2}
 	// fmt.Println(singlenumber.SingleNumber(num))
+
+	//155題
+	minStack := minstack.Constructor()
+	// fmt.Println(minStack)
+	minStack.Push(2147483646)
+	minStack.Push(2147483646)
+	minStack.Push(2147483647)
+	fmt.Println(minStack.Top())
+	minStack.Pop()
+	fmt.Println(minStack.GetMin())
+	minStack.Pop()
+	fmt.Println(minStack.GetMin())
+	minStack.Pop()
+	minStack.Push(2147483647)
+	fmt.Println(minStack.Top())
+	fmt.Println(minStack.GetMin())
+	minStack.Push(-2147483647)
+	fmt.Println(minStack.Top())
+	fmt.Println(minStack.GetMin())
+	minStack.Pop()
+	fmt.Println(minStack.GetMin())
+	// fmt.Println(minStack)
 
 	//217題
 	// nums := []int{1, 1, 1, 3, 3, 4, 3, 2, 4, 2}
@@ -91,8 +124,8 @@ func main() {
 	// fmt.Println(palindromeLinkedList.IsPalindrome(&a))
 
 	//242題
-	s, t := "anagram", "nagaram"
-	fmt.Println(validanagram.IsAnagram(s, t))
+	// s, t := "anagram", "nagaram"
+	// fmt.Println(validanagram.IsAnagram(s, t))
 
 	//2011題
 	// operations := []string{"X++", "++X", "--X", "X--"}
