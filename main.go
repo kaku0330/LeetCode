@@ -33,6 +33,15 @@ package main
 // 	"fmt"
 // )
 // import (
+// 	implementstackusingqueues "LeetCode/225_Implement_Stack_using_Queues"
+// 	"fmt"
+// )
+import (
+	implementqueueusingstacks "LeetCode/232_Implement_Queue_using_Stacks"
+	"fmt"
+)
+
+// import (
 // palindromeLinkedList "LeetCode/234_Palindrome_Linked_List"
 // 	"fmt"
 // )
@@ -44,11 +53,10 @@ package main
 // 	decodestring "LeetCode/394_Decode_String"
 // 	"fmt"
 // )
-import (
-	numberofstudentsunabletoeatlunch "LeetCode/1700_Number_of_Students_Unable_to_Eat_Lunch"
-	"fmt"
-)
-
+// import (
+// 	numberofstudentsunabletoeatlunch "LeetCode/1700_Number_of_Students_Unable_to_Eat_Lunch"
+// 	"fmt"
+// )
 // import (
 // 	finalvalueofvariableafterperformingoperations "LeetCode/2011_Final_Value_of_Variable_After_Performing_Operations"
 // 	"fmt"
@@ -101,10 +109,23 @@ func main() {
 	// fmt.Println(minStack.GetMin())
 	// minStack.Pop()
 	// fmt.Println(minStack.GetMin())
-
 	//217題
 	// nums := []int{1, 1, 1, 3, 3, 4, 3, 2, 4, 2}
 	// fmt.Println(containsduplicate.ContainsDuplicate(nums))
+	//225題
+	// minStack := implementstackusingqueues.Constructor()
+	// minStack.Push(1)
+	// minStack.Push(2)
+	// fmt.Println(minStack.Top())
+	// fmt.Println(minStack.Pop())
+	// fmt.Println(minStack.Empty())
+	//232題
+	minStack := implementqueueusingstacks.Constructor()
+	minStack.Push(1)
+	minStack.Push(2)
+	fmt.Println(minStack.Peek())
+	fmt.Println(minStack.Pop())
+	fmt.Println(minStack.Empty())
 	//234題
 	// e := palindromeLinkedList.ListNode{
 	// 	Val:  1,
@@ -138,9 +159,9 @@ func main() {
 	// fmt.Println(decodestring.DecodeString(s))
 
 	//1700題
-	students, sandwiches := []int{1, 1, 0, 0}, []int{0, 1, 0, 1}
+	// students, sandwiches := []int{1, 1, 0, 0}, []int{0, 1, 0, 1}
 	// students, sandwiches := []int{1, 1, 1, 0, 0, 1}, []int{1, 0, 0, 0, 1, 1}
-	fmt.Println(numberofstudentsunabletoeatlunch.CountStudents(students, sandwiches))
+	// fmt.Println(numberofstudentsunabletoeatlunch.CountStudents(students, sandwiches))
 	//2011題
 	// operations := []string{"X++", "++X", "--X", "X--"}
 	// fmt.Println(finalvalueofvariableafterperformingoperations.FinalValueAfterOperations(operations))
