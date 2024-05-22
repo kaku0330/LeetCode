@@ -24,11 +24,10 @@ package main
 // 	singlenumber "LeetCode/136_Single_Number"
 // 	"fmt"
 // )
-import (
-	minstack "LeetCode/155_Min_Stack"
-	"fmt"
-)
-
+// import (
+// 	minstack "LeetCode/155_Min_Stack"
+// 	"fmt"
+// )
 // import (
 // 	containsduplicate "LeetCode/217_Contains_Duplicate"
 // 	"fmt"
@@ -41,6 +40,15 @@ import (
 // 	validanagram "LeetCode/242_Valid_Anagram"
 // 	"fmt"
 // )
+// import (
+// 	decodestring "LeetCode/394_Decode_String"
+// 	"fmt"
+// )
+import (
+	numberofstudentsunabletoeatlunch "LeetCode/1700_Number_of_Students_Unable_to_Eat_Lunch"
+	"fmt"
+)
+
 // import (
 // 	finalvalueofvariableafterperformingoperations "LeetCode/2011_Final_Value_of_Variable_After_Performing_Operations"
 // 	"fmt"
@@ -75,26 +83,24 @@ func main() {
 	// fmt.Println(singlenumber.SingleNumber(num))
 
 	//155題
-	minStack := minstack.Constructor()
-	// fmt.Println(minStack)
-	minStack.Push(2147483646)
-	minStack.Push(2147483646)
-	minStack.Push(2147483647)
-	fmt.Println(minStack.Top())
-	minStack.Pop()
-	fmt.Println(minStack.GetMin())
-	minStack.Pop()
-	fmt.Println(minStack.GetMin())
-	minStack.Pop()
-	minStack.Push(2147483647)
-	fmt.Println(minStack.Top())
-	fmt.Println(minStack.GetMin())
-	minStack.Push(-2147483647)
-	fmt.Println(minStack.Top())
-	fmt.Println(minStack.GetMin())
-	minStack.Pop()
-	fmt.Println(minStack.GetMin())
-	// fmt.Println(minStack)
+	// minStack := minstack.Constructor()
+	// minStack.Push(2147483646)
+	// minStack.Push(2147483646)
+	// minStack.Push(2147483647)
+	// fmt.Println(minStack.Top())
+	// minStack.Pop()
+	// fmt.Println(minStack.GetMin())
+	// minStack.Pop()
+	// fmt.Println(minStack.GetMin())
+	// minStack.Pop()
+	// minStack.Push(2147483647)
+	// fmt.Println(minStack.Top())
+	// fmt.Println(minStack.GetMin())
+	// minStack.Push(-2147483647)
+	// fmt.Println(minStack.Top())
+	// fmt.Println(minStack.GetMin())
+	// minStack.Pop()
+	// fmt.Println(minStack.GetMin())
 
 	//217題
 	// nums := []int{1, 1, 1, 3, 3, 4, 3, 2, 4, 2}
@@ -127,6 +133,14 @@ func main() {
 	// s, t := "anagram", "nagaram"
 	// fmt.Println(validanagram.IsAnagram(s, t))
 
+	//394題
+	// s := "3[a]2[bc]"
+	// fmt.Println(decodestring.DecodeString(s))
+
+	//1700題
+	students, sandwiches := []int{1, 1, 0, 0}, []int{0, 1, 0, 1}
+	// students, sandwiches := []int{1, 1, 1, 0, 0, 1}, []int{1, 0, 0, 0, 1, 1}
+	fmt.Println(numberofstudentsunabletoeatlunch.CountStudents(students, sandwiches))
 	//2011題
 	// operations := []string{"X++", "++X", "--X", "X--"}
 	// fmt.Println(finalvalueofvariableafterperformingoperations.FinalValueAfterOperations(operations))
