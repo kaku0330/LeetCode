@@ -36,11 +36,10 @@ package main
 // 	implementstackusingqueues "LeetCode/225_Implement_Stack_using_Queues"
 // 	"fmt"
 // )
-import (
-	implementqueueusingstacks "LeetCode/232_Implement_Queue_using_Stacks"
-	"fmt"
-)
-
+// import (
+// 	implementqueueusingstacks "LeetCode/232_Implement_Queue_using_Stacks"
+// 	"fmt"
+// )
 // import (
 // palindromeLinkedList "LeetCode/234_Palindrome_Linked_List"
 // 	"fmt"
@@ -53,6 +52,11 @@ import (
 // 	decodestring "LeetCode/394_Decode_String"
 // 	"fmt"
 // )
+import (
+	baseballgame "LeetCode/682_Baseball_Game"
+	"fmt"
+)
+
 // import (
 // 	numberofstudentsunabletoeatlunch "LeetCode/1700_Number_of_Students_Unable_to_Eat_Lunch"
 // 	"fmt"
@@ -120,12 +124,12 @@ func main() {
 	// fmt.Println(minStack.Pop())
 	// fmt.Println(minStack.Empty())
 	//232題
-	minStack := implementqueueusingstacks.Constructor()
-	minStack.Push(1)
-	minStack.Push(2)
-	fmt.Println(minStack.Peek())
-	fmt.Println(minStack.Pop())
-	fmt.Println(minStack.Empty())
+	// minStack := implementqueueusingstacks.Constructor()
+	// minStack.Push(1)
+	// minStack.Push(2)
+	// fmt.Println(minStack.Peek())
+	// fmt.Println(minStack.Pop())
+	// fmt.Println(minStack.Empty())
 	//234題
 	// e := palindromeLinkedList.ListNode{
 	// 	Val:  1,
@@ -158,10 +162,15 @@ func main() {
 	// s := "3[a]2[bc]"
 	// fmt.Println(decodestring.DecodeString(s))
 
+	//682題
+	operations := []string{"5", "2", "C", "D", "+"}
+	fmt.Println(baseballgame.CalPoints(operations))
+
 	//1700題
 	// students, sandwiches := []int{1, 1, 0, 0}, []int{0, 1, 0, 1}
 	// students, sandwiches := []int{1, 1, 1, 0, 0, 1}, []int{1, 0, 0, 0, 1, 1}
 	// fmt.Println(numberofstudentsunabletoeatlunch.CountStudents(students, sandwiches))
+
 	//2011題
 	// operations := []string{"X++", "++X", "--X", "X--"}
 	// fmt.Println(finalvalueofvariableafterperformingoperations.FinalValueAfterOperations(operations))
