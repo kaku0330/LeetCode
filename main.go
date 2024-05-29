@@ -16,6 +16,15 @@ package main
 // 	groupanagrams "LeetCode/49_Group_Anagrams"
 // 	"fmt"
 // )
+import (
+	lengthOfLastWord "LeetCode/58_Length_of_Last_Word"
+	"fmt"
+)
+
+// import (
+// 	simplifypath "LeetCode/71_Simplify_Path"
+// 	"fmt"
+// )
 // import (
 // 	besttimetobuyandsellstock "LeetCode/121_Best_Time_to_Buy_and_Sell_Stock"
 // 	"fmt"
@@ -52,11 +61,10 @@ package main
 // 	decodestring "LeetCode/394_Decode_String"
 // 	"fmt"
 // )
-import (
-	baseballgame "LeetCode/682_Baseball_Game"
-	"fmt"
-)
-
+// import (
+// 	baseballgame "LeetCode/682_Baseball_Game"
+// 	"fmt"
+// )
 // import (
 // 	numberofstudentsunabletoeatlunch "LeetCode/1700_Number_of_Students_Unable_to_Eat_Lunch"
 // 	"fmt"
@@ -67,6 +75,10 @@ import (
 // )
 // import (
 // 	maximumnumberofwordsfoundinsentences "LeetCode/2114_Maximum_Number_of_Words_Found_in_Sentences"
+// 	"fmt"
+// )
+// import (
+// 	scoreofastring "LeetCode/3110_Score_of_a_String"
 // 	"fmt"
 // )
 
@@ -86,6 +98,14 @@ func main() {
 	//49題
 	// strs := []string{"eat", "tea", "tan", "ate", "nat", "bat"}
 	// fmt.Println(groupanagrams.GroupAnagrams(strs))
+
+	//58題
+	s := "   fly me   to   the moon  "
+	fmt.Println(lengthOfLastWord.LengthOfLastWord(s))
+	//71題
+	// path := "/../"
+	// fmt.Println(simplifypath.SimplifyPath(path))
+
 	//121題
 	// prices := []int{7, 1, 5, 3, 6, 4}
 	// fmt.Println(besttimetobuyandsellstock.MaxProfit(prices))
@@ -163,8 +183,8 @@ func main() {
 	// fmt.Println(decodestring.DecodeString(s))
 
 	//682題
-	operations := []string{"5", "2", "C", "D", "+"}
-	fmt.Println(baseballgame.CalPoints(operations))
+	// operations := []string{"5", "2", "C", "D", "+"}
+	// fmt.Println(baseballgame.CalPoints(operations))
 
 	//1700題
 	// students, sandwiches := []int{1, 1, 0, 0}, []int{0, 1, 0, 1}
@@ -178,4 +198,8 @@ func main() {
 	//2114題
 	// sentences := []string{"alice and bob love leetcode", "i think so too", "this is great thanks very much"}
 	// fmt.Println(maximumnumberofwordsfoundinsentences.MostWordsFound(sentences))
+
+	//3110題
+	// s := "hello"
+	// fmt.Println(scoreofastring.ScoreOfString(s))
 }
