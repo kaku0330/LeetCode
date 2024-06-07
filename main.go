@@ -4,6 +4,11 @@ package main
 // 	twoSum "LeetCode/1_Two_Sum"
 // 	"fmt"
 // )
+import (
+	romantointeger "LeetCode/13_Roman_To_Integer"
+	"fmt"
+)
+
 // import (
 // 	validParentheses "LeetCode/20_Valid_Parentheses"
 // 	"fmt"
@@ -16,13 +21,16 @@ package main
 // 	groupanagrams "LeetCode/49_Group_Anagrams"
 // 	"fmt"
 // )
-import (
-	lengthOfLastWord "LeetCode/58_Length_of_Last_Word"
-	"fmt"
-)
-
+// import (
+// 	lengthOfLastWord "LeetCode/58_Length_of_Last_Word"
+// 	"fmt"
+// )
 // import (
 // 	simplifypath "LeetCode/71_Simplify_Path"
+// 	"fmt"
+// )
+// import (
+// 	largestrectangleinhistogram "LeetCode/84_Largest_Rectangle_in_Histogram"
 // 	"fmt"
 // )
 // import (
@@ -33,6 +41,11 @@ import (
 // 	singlenumber "LeetCode/136_Single_Number"
 // 	"fmt"
 // )
+// import (
+// 	insertionSortList "LeetCode/147_Insertion_Sort_List"
+// 	"fmt"
+// )
+
 // import (
 // 	minstack "LeetCode/155_Min_Stack"
 // 	"fmt"
@@ -66,6 +79,11 @@ import (
 // 	"fmt"
 // )
 // import (
+// 	scoreOfParentheses "LeetCode/856_Score_of_Parentheses"
+// 	"fmt"
+// )
+
+// import (
 // 	numberofstudentsunabletoeatlunch "LeetCode/1700_Number_of_Students_Unable_to_Eat_Lunch"
 // 	"fmt"
 // )
@@ -78,6 +96,10 @@ import (
 // 	"fmt"
 // )
 // import (
+// 	sortvowelsinastring "LeetCode/2785_Sort_Vowels_in_a_String"
+// 	"fmt"
+// )
+// import (
 // 	scoreofastring "LeetCode/3110_Score_of_a_String"
 // 	"fmt"
 // )
@@ -86,6 +108,10 @@ func main() {
 	//1題
 	// nums := []int{3, 3}
 	// fmt.Println(twoSum.TwoSum(nums, 6))
+
+	//13題
+	s := "MDCCCLXXXIV"
+	fmt.Println(romantointeger.RomanToInt(s))
 
 	//20題
 	// s := "))"
@@ -100,11 +126,16 @@ func main() {
 	// fmt.Println(groupanagrams.GroupAnagrams(strs))
 
 	//58題
-	s := "   fly me   to   the moon  "
-	fmt.Println(lengthOfLastWord.LengthOfLastWord(s))
+	// s := "   fly me   to   the moon  "
+	// fmt.Println(lengthOfLastWord.LengthOfLastWord(s))
+
 	//71題
 	// path := "/../"
 	// fmt.Println(simplifypath.SimplifyPath(path))
+
+	//84題
+	// heights := []int{2, 1, 5, 6, 2, 3}
+	// fmt.Println(largestrectangleinhistogram.LargestRectangleArea(heights))
 
 	//121題
 	// prices := []int{7, 1, 5, 3, 6, 4}
@@ -114,6 +145,29 @@ func main() {
 	// num := []int{1, 2, 4, 1, 2}
 	// fmt.Println(singlenumber.SingleNumber(num))
 
+	//147題
+	// e := insertionSortList.ListNode{
+	// Val:  1,
+	// Next: nil,
+	// }
+	// d := insertionSortList.ListNode{
+	// 	Val:  3,
+	// 	Next: nil,
+	// }
+
+	// c := insertionSortList.ListNode{
+	// 	Val:  1,
+	// 	Next: &d,
+	// }
+	// b := insertionSortList.ListNode{
+	// 	Val:  2,
+	// 	Next: &c,
+	// }
+	// a := insertionSortList.ListNode{
+	// 	Val:  4,
+	// 	Next: &b,
+	// }
+	// fmt.Println(insertionSortList.InsertionSortList(&a))
 	//155題
 	// minStack := minstack.Constructor()
 	// minStack.Push(2147483646)
@@ -133,9 +187,11 @@ func main() {
 	// fmt.Println(minStack.GetMin())
 	// minStack.Pop()
 	// fmt.Println(minStack.GetMin())
+
 	//217題
 	// nums := []int{1, 1, 1, 3, 3, 4, 3, 2, 4, 2}
 	// fmt.Println(containsduplicate.ContainsDuplicate(nums))
+
 	//225題
 	// minStack := implementstackusingqueues.Constructor()
 	// minStack.Push(1)
@@ -143,6 +199,7 @@ func main() {
 	// fmt.Println(minStack.Top())
 	// fmt.Println(minStack.Pop())
 	// fmt.Println(minStack.Empty())
+
 	//232題
 	// minStack := implementqueueusingstacks.Constructor()
 	// minStack.Push(1)
@@ -150,6 +207,7 @@ func main() {
 	// fmt.Println(minStack.Peek())
 	// fmt.Println(minStack.Pop())
 	// fmt.Println(minStack.Empty())
+
 	//234題
 	// e := palindromeLinkedList.ListNode{
 	// 	Val:  1,
@@ -186,6 +244,10 @@ func main() {
 	// operations := []string{"5", "2", "C", "D", "+"}
 	// fmt.Println(baseballgame.CalPoints(operations))
 
+	//859題
+	// s := "(()(()))"
+	// fmt.Println(scoreOfParentheses.ScoreOfParentheses(s))
+
 	//1700題
 	// students, sandwiches := []int{1, 1, 0, 0}, []int{0, 1, 0, 1}
 	// students, sandwiches := []int{1, 1, 1, 0, 0, 1}, []int{1, 0, 0, 0, 1, 1}
@@ -198,6 +260,10 @@ func main() {
 	//2114題
 	// sentences := []string{"alice and bob love leetcode", "i think so too", "this is great thanks very much"}
 	// fmt.Println(maximumnumberofwordsfoundinsentences.MostWordsFound(sentences))
+
+	//2785題
+	// s := "lEetcOde"
+	// fmt.Println(sortvowelsinastring.SortVowels(s))
 
 	//3110題
 	// s := "hello"
