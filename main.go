@@ -4,11 +4,14 @@ package main
 // 	twoSum "LeetCode/1_Two_Sum"
 // 	"fmt"
 // )
-import (
-	romantointeger "LeetCode/13_Roman_To_Integer"
-	"fmt"
-)
-
+// import (
+// 	zigzagconversion "LeetCode/6_Zigzag_Conversion"
+// 	"fmt"
+// )
+// import (
+// 	romantointeger "LeetCode/13_Roman_To_Integer"
+// 	"fmt"
+// )
 // import (
 // 	validParentheses "LeetCode/20_Valid_Parentheses"
 // 	"fmt"
@@ -17,6 +20,11 @@ import (
 // removeElement "LeetCode/27_Remove_Element"
 // 	"fmt"
 // )
+import (
+	searchinsertposition "LeetCode/35_Search_Insert_Position"
+	"fmt"
+)
+
 // import (
 // 	groupanagrams "LeetCode/49_Group_Anagrams"
 // 	"fmt"
@@ -45,7 +53,6 @@ import (
 // 	insertionSortList "LeetCode/147_Insertion_Sort_List"
 // 	"fmt"
 // )
-
 // import (
 // 	minstack "LeetCode/155_Min_Stack"
 // 	"fmt"
@@ -82,7 +89,6 @@ import (
 // 	scoreOfParentheses "LeetCode/856_Score_of_Parentheses"
 // 	"fmt"
 // )
-
 // import (
 // 	numberofstudentsunabletoeatlunch "LeetCode/1700_Number_of_Students_Unable_to_Eat_Lunch"
 // 	"fmt"
@@ -109,9 +115,14 @@ func main() {
 	// nums := []int{3, 3}
 	// fmt.Println(twoSum.TwoSum(nums, 6))
 
+	//6題
+	// s := "PAYPALISHIRING"
+	// numRows := 3
+	// fmt.Println(zigzagconversion.Convert(s, numRows))
+
 	//13題
-	s := "MDCCCLXXXIV"
-	fmt.Println(romantointeger.RomanToInt(s))
+	// s := "MDCCCLXXXIV"
+	// fmt.Println(romantointeger.RomanToInt(s))
 
 	//20題
 	// s := "))"
@@ -121,6 +132,10 @@ func main() {
 	// num := []int{1, 2, 3, 4, 4}
 	// fmt.Println(removeElement.RemoveElement(num, 1))
 
+	//35題
+	nums := []int{1, 3, 5, 6}
+	target := 2
+	fmt.Println(searchinsertposition.SearchInsert(nums, target))
 	//49題
 	// strs := []string{"eat", "tea", "tan", "ate", "nat", "bat"}
 	// fmt.Println(groupanagrams.GroupAnagrams(strs))
