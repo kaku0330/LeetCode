@@ -5,6 +5,11 @@ package main
 // 	"fmt"
 // )
 // import (
+// 	addtwonumbers "LeetCode/2_Add_Two_Numbers"
+// 	"fmt"
+// )
+
+// import (
 // 	zigzagconversion "LeetCode/6_Zigzag_Conversion"
 // 	"fmt"
 // )
@@ -17,13 +22,23 @@ package main
 // 	"fmt"
 // )
 // import (
+// 	mergetwosortedlists "LeetCode/21_Merge_Two_Sorted_Lists"
+// 	"fmt"
+// )
+
+// import (
 // removeElement "LeetCode/27_Remove_Element"
 // 	"fmt"
 // )
-import (
-	searchinsertposition "LeetCode/35_Search_Insert_Position"
-	"fmt"
-)
+// import (
+// 	searchinsertposition "LeetCode/35_Search_Insert_Position"
+// 	"fmt"
+// )
+
+// import (
+// 	countandsay "LeetCode/38_Count_and_Say"
+// 	"fmt"
+// )
 
 // import (
 // 	groupanagrams "LeetCode/49_Group_Anagrams"
@@ -77,6 +92,11 @@ import (
 // 	validanagram "LeetCode/242_Valid_Anagram"
 // 	"fmt"
 // )
+import (
+	firstuniquecharacterinastring "LeetCode/387_First_Unique_Character_in_a_String"
+	"fmt"
+)
+
 // import (
 // 	decodestring "LeetCode/394_Decode_String"
 // 	"fmt"
@@ -115,6 +135,60 @@ func main() {
 	// nums := []int{3, 3}
 	// fmt.Println(twoSum.TwoSum(nums, 6))
 
+	//2題
+	// num1_7 := addtwonumbers.ListNode{
+	// 	Val:  9,
+	// 	Next: nil,
+	// }
+	// num1_6 := addtwonumbers.ListNode{
+	// 	Val:  9,
+	// 	Next: &num1_7,
+	// }
+	// num1_5 := addtwonumbers.ListNode{
+	// 	Val:  9,
+	// 	Next: &num1_6,
+	// }
+	// num1_4 := addtwonumbers.ListNode{
+	// 	Val:  9,
+	// 	Next: &num1_5,
+	// }
+	// num1_3 := addtwonumbers.ListNode{
+	// 	Val:  9,
+	// 	Next: &num1_4,
+	// }
+	// num1_2 := addtwonumbers.ListNode{
+	// 	Val:  9,
+	// 	Next: &num1_3,
+	// }
+	// num1_1 := addtwonumbers.ListNode{
+	// 	Val:  9,
+	// 	Next: &num1_2,
+	// }
+
+	// num2_4 := addtwonumbers.ListNode{
+	// 	Val:  9,
+	// 	Next: nil,
+	// }
+	// num2_3 := addtwonumbers.ListNode{
+	// 	Val:  9,
+	// 	Next: &num2_4,
+	// }
+	// num2_2 := addtwonumbers.ListNode{
+	// 	Val:  9,
+	// 	Next: &num2_3,
+	// }
+	// num2_1 := addtwonumbers.ListNode{
+	// 	Val:  9,
+	// 	Next: &num2_2,
+	// }
+	// // fmt.Println(addtwonumbers.AddTwoNumbers(&num1_1, &num2_1))
+	// vals := addtwonumbers.AddTwoNumbers(&num1_1, &num2_1)
+	// for vals.Next != nil {
+	// 	fmt.Println(vals.Val)
+	// 	vals = vals.Next
+	// }
+	// fmt.Println(val.Next.Next)
+
 	//6題
 	// s := "PAYPALISHIRING"
 	// numRows := 3
@@ -128,14 +202,45 @@ func main() {
 	// s := "))"
 	// fmt.Println(validParentheses.IsValid(s))
 
+	//21題
+	// num1_3 := mergetwosortedlists.ListNode{
+	// 	Val:  4,
+	// 	Next: nil,
+	// }
+	// num1_2 := mergetwosortedlists.ListNode{
+	// 	Val:  2,
+	// 	Next: &num1_3,
+	// }
+	// num1_1 := mergetwosortedlists.ListNode{
+	// 	Val:  1,
+	// 	Next: &num1_2,
+	// }
+	// num2_3 := mergetwosortedlists.ListNode{
+	// 	Val:  4,
+	// 	Next: nil,
+	// }
+	// num2_2 := mergetwosortedlists.ListNode{
+	// 	Val:  3,
+	// 	Next: &num2_3,
+	// }
+	// num2_1 := mergetwosortedlists.ListNode{
+	// 	Val:  1,
+	// 	Next: &num2_2,
+	// }
+	// fmt.Println(mergetwosortedlists.MergeTwoLists(&num1_1, &num2_1))
+
 	//27題  題目怪怪的先不寫
 	// num := []int{1, 2, 3, 4, 4}
 	// fmt.Println(removeElement.RemoveElement(num, 1))
 
-	//35題
-	nums := []int{1, 3, 5, 6}
-	target := 2
-	fmt.Println(searchinsertposition.SearchInsert(nums, target))
+	// 35題
+	// nums := []int{1, 2, 4, 6, 7}
+	// target := 3
+	// fmt.Println(searchinsertposition.SearchInsert(nums, target))
+
+	//38
+	// n := 1
+	// fmt.Println(countandsay.CountAndSay(n))
 	//49題
 	// strs := []string{"eat", "tea", "tan", "ate", "nat", "bat"}
 	// fmt.Println(groupanagrams.GroupAnagrams(strs))
@@ -250,6 +355,10 @@ func main() {
 	//242題
 	// s, t := "anagram", "nagaram"
 	// fmt.Println(validanagram.IsAnagram(s, t))
+
+	//387題
+	s := "leetcode"
+	fmt.Println(firstuniquecharacterinastring.FirstUniqChar(s))
 
 	//394題
 	// s := "3[a]2[bc]"
