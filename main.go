@@ -26,10 +26,11 @@ package main
 // 	"fmt"
 // )
 
-// import (
-// removeElement "LeetCode/27_Remove_Element"
-// 	"fmt"
-// )
+import (
+	removeElement "LeetCode/27_Remove_Element"
+	"fmt"
+)
+
 // import (
 // 	searchinsertposition "LeetCode/35_Search_Insert_Position"
 // 	"fmt"
@@ -92,10 +93,10 @@ package main
 // 	validanagram "LeetCode/242_Valid_Anagram"
 // 	"fmt"
 // )
-import (
-	firstuniquecharacterinastring "LeetCode/387_First_Unique_Character_in_a_String"
-	"fmt"
-)
+// import (
+// 	firstuniquecharacterinastring "LeetCode/387_First_Unique_Character_in_a_String"
+// 	"fmt"
+// )
 
 // import (
 // 	decodestring "LeetCode/394_Decode_String"
@@ -229,9 +230,9 @@ func main() {
 	// }
 	// fmt.Println(mergetwosortedlists.MergeTwoLists(&num1_1, &num2_1))
 
-	//27題  題目怪怪的先不寫
-	// num := []int{1, 2, 3, 4, 4}
-	// fmt.Println(removeElement.RemoveElement(num, 1))
+	// 27題
+	nums := []int{3, 2, 2, 3}
+	fmt.Println(removeElement.RemoveElement(nums, 2))
 
 	// 35題
 	// nums := []int{1, 2, 4, 6, 7}
@@ -357,8 +358,8 @@ func main() {
 	// fmt.Println(validanagram.IsAnagram(s, t))
 
 	//387題
-	s := "leetcode"
-	fmt.Println(firstuniquecharacterinastring.FirstUniqChar(s))
+	// s := "leetcode"
+	// fmt.Println(firstuniquecharacterinastring.FirstUniqChar(s))
 
 	//394題
 	// s := "3[a]2[bc]"
