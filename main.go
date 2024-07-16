@@ -124,11 +124,10 @@ package main
 // 	scoreOfParentheses "LeetCode/856_Score_of_Parentheses"
 // 	"fmt"
 // )
-import (
-	numberofgoodpairs "LeetCode/1512_Number_of_Good_Pairs"
-	"fmt"
-)
-
+// import (
+// 	numberofgoodpairs "LeetCode/1512_Number_of_Good_Pairs"
+// 	"fmt"
+// )
 // import (
 // 	numberofstudentsunabletoeatlunch "LeetCode/1700_Number_of_Students_Unable_to_Eat_Lunch"
 // 	"fmt"
@@ -149,6 +148,10 @@ import (
 // 	scoreofastring "LeetCode/3110_Score_of_a_String"
 // 	"fmt"
 // )
+import (
+	permutationdifferencebetweentwostrings "LeetCode/3146_Permutation_Difference_Between_Two_Strings"
+	"fmt"
+)
 
 func main() {
 	//1題
@@ -409,8 +412,8 @@ func main() {
 	// fmt.Println(scoreOfParentheses.ScoreOfParentheses(s))
 
 	//1512題
-	nums := []int{1, 2, 3, 1, 1, 3}
-	fmt.Println(numberofgoodpairs.NumIdenticalPairs(nums))
+	// nums := []int{1, 2, 3, 1, 1, 3}
+	// fmt.Println(numberofgoodpairs.NumIdenticalPairs(nums))
 
 	//1700題
 	// students, sandwiches := []int{1, 1, 0, 0}, []int{0, 1, 0, 1}
@@ -432,4 +435,9 @@ func main() {
 	//3110題
 	// s := "hello"
 	// fmt.Println(scoreofastring.ScoreOfString(s))
+
+	//3146題
+	s := "abcde"
+	t := "edbac"
+	fmt.Println(permutationdifferencebetweentwostrings.FindPermutationDifference(s, t))
 }
