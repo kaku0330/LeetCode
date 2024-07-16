@@ -120,6 +120,11 @@ package main
 // 	baseballgame "LeetCode/682_Baseball_Game"
 // 	"fmt"
 // )
+import (
+	jewelsandstones "LeetCode/771_Jewels_and_Stones"
+	"fmt"
+)
+
 // import (
 // 	scoreOfParentheses "LeetCode/856_Score_of_Parentheses"
 // 	"fmt"
@@ -148,10 +153,10 @@ package main
 // 	scoreofastring "LeetCode/3110_Score_of_a_String"
 // 	"fmt"
 // )
-import (
-	permutationdifferencebetweentwostrings "LeetCode/3146_Permutation_Difference_Between_Two_Strings"
-	"fmt"
-)
+// import (
+// 	permutationdifferencebetweentwostrings "LeetCode/3146_Permutation_Difference_Between_Two_Strings"
+// 	"fmt"
+// )
 
 func main() {
 	//1題
@@ -407,6 +412,10 @@ func main() {
 	// operations := []string{"5", "2", "C", "D", "+"}
 	// fmt.Println(baseballgame.CalPoints(operations))
 
+	//771題
+	jewels := "aA"
+	stones := "aAAbbbb"
+	fmt.Println(jewelsandstones.NumJewelsInStones(jewels, stones))
 	//859題
 	// s := "(()(()))"
 	// fmt.Println(scoreOfParentheses.ScoreOfParentheses(s))
@@ -437,7 +446,7 @@ func main() {
 	// fmt.Println(scoreofastring.ScoreOfString(s))
 
 	//3146題
-	s := "abcde"
-	t := "edbac"
-	fmt.Println(permutationdifferencebetweentwostrings.FindPermutationDifference(s, t))
+	// s := "abcde"
+	// t := "edbac"
+	// fmt.Println(permutationdifferencebetweentwostrings.FindPermutationDifference(s, t))
 }
