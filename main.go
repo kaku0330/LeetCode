@@ -26,10 +26,15 @@ package main
 // 	"fmt"
 // )
 
-import (
-	removeElement "LeetCode/27_Remove_Element"
-	"fmt"
-)
+// import (
+// 	removeduplicatesfromsortedarray "LeetCode/26_Remove_Duplicates_from_Sorted_Array"
+// 	"fmt"
+// )
+
+// import (
+// 	removeElement "LeetCode/27_Remove_Element"
+// 	"fmt"
+// )
 
 // import (
 // 	searchinsertposition "LeetCode/35_Search_Insert_Position"
@@ -58,6 +63,10 @@ import (
 // 	"fmt"
 // )
 // import (
+// mergesortedarray "LeetCode/88_Merge_Sorted_Array"
+// 	"fmt"
+// )
+// import (
 // 	besttimetobuyandsellstock "LeetCode/121_Best_Time_to_Buy_and_Sell_Stock"
 // 	"fmt"
 // )
@@ -81,6 +90,11 @@ import (
 // 	implementstackusingqueues "LeetCode/225_Implement_Stack_using_Queues"
 // 	"fmt"
 // )
+// import (
+// 	basiccalculator "LeetCode/224_Basic_Calculator"
+// 	"fmt"
+// )
+
 // import (
 // 	implementqueueusingstacks "LeetCode/232_Implement_Queue_using_Stacks"
 // 	"fmt"
@@ -110,6 +124,11 @@ import (
 // 	scoreOfParentheses "LeetCode/856_Score_of_Parentheses"
 // 	"fmt"
 // )
+import (
+	numberofgoodpairs "LeetCode/1512_Number_of_Good_Pairs"
+	"fmt"
+)
+
 // import (
 // 	numberofstudentsunabletoeatlunch "LeetCode/1700_Number_of_Students_Unable_to_Eat_Lunch"
 // 	"fmt"
@@ -230,9 +249,13 @@ func main() {
 	// }
 	// fmt.Println(mergetwosortedlists.MergeTwoLists(&num1_1, &num2_1))
 
+	// 26題
+	// nums := []int{1, 1, 2}
+	// fmt.Println(removeduplicatesfromsortedarray.RemoveDuplicates(nums))
+	// fmt.Println(nums)
 	// 27題
-	nums := []int{3, 2, 2, 3}
-	fmt.Println(removeElement.RemoveElement(nums, 2))
+	// nums := []int{3, 2, 2, 3}
+	// fmt.Println(removeElement.RemoveElement(nums, 2))
 
 	// 35題
 	// nums := []int{1, 2, 4, 6, 7}
@@ -257,6 +280,13 @@ func main() {
 	//84題
 	// heights := []int{2, 1, 5, 6, 2, 3}
 	// fmt.Println(largestrectangleinhistogram.LargestRectangleArea(heights))
+
+	//88題
+	// nums1 := []int{2, 0}
+	// m := 1
+	// nums2 := []int{1}
+	// n := 1
+	// mergesortedarray.Merge(nums1, m, nums2, n)
 
 	//121題
 	// prices := []int{7, 1, 5, 3, 6, 4}
@@ -312,6 +342,11 @@ func main() {
 	//217題
 	// nums := []int{1, 1, 1, 3, 3, 4, 3, 2, 4, 2}
 	// fmt.Println(containsduplicate.ContainsDuplicate(nums))
+
+	//224題
+	// s := "(1+(4+5+2)-3)+(6+8)"
+	// s := "1+1"
+	// fmt.Println(basiccalculator.Calculate(s))
 
 	//225題
 	// minStack := implementstackusingqueues.Constructor()
@@ -372,6 +407,10 @@ func main() {
 	//859題
 	// s := "(()(()))"
 	// fmt.Println(scoreOfParentheses.ScoreOfParentheses(s))
+
+	//1512題
+	nums := []int{1, 2, 3, 1, 1, 3}
+	fmt.Println(numberofgoodpairs.NumIdenticalPairs(nums))
 
 	//1700題
 	// students, sandwiches := []int{1, 1, 0, 0}, []int{0, 1, 0, 1}
