@@ -7,5 +7,5 @@ steps:
   commands:
     - go build
     - echo "************testing************"
-    - go test
+    - go test ./...
     - echo "********testing complete********"
