@@ -1,0 +1,11 @@
+kind: pipeline
+name: testing
+
+steps:
+- name: backend
+  image: golang:1.21
+  commands:
+    - go build
+    - echo "************testing************"
+    - go test
+    - echo "********testing complete********"

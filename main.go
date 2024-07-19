@@ -120,15 +120,20 @@ package main
 // 	baseballgame "LeetCode/682_Baseball_Game"
 // 	"fmt"
 // )
-import (
-	jewelsandstones "LeetCode/771_Jewels_and_Stones"
-	"fmt"
-)
+// import (
+// 	jewelsandstones "LeetCode/771_Jewels_and_Stones"
+// 	"fmt"
+// )
 
 // import (
 // 	scoreOfParentheses "LeetCode/856_Score_of_Parentheses"
 // 	"fmt"
 // )
+import (
+	How_Many_Numbers_Are_Smaller_Than_the_Current_Number "LeetCode/1365_How_Many_Numbers_Are_Smaller_Than_the_Current_Number"
+	"fmt"
+)
+
 // import (
 // 	numberofgoodpairs "LeetCode/1512_Number_of_Good_Pairs"
 // 	"fmt"
@@ -413,12 +418,17 @@ func main() {
 	// fmt.Println(baseballgame.CalPoints(operations))
 
 	//771題
-	jewels := "aA"
-	stones := "aAAbbbb"
-	fmt.Println(jewelsandstones.NumJewelsInStones(jewels, stones))
+	// jewels := "aA"
+	// stones := "aAAbbbb"
+	// fmt.Println(jewelsandstones.NumJewelsInStones(jewels, stones))
+
 	//859題
 	// s := "(()(()))"
 	// fmt.Println(scoreOfParentheses.ScoreOfParentheses(s))
+
+	//1365題
+	nums := []int{8, 1, 2, 2, 3}
+	fmt.Println(How_Many_Numbers_Are_Smaller_Than_the_Current_Number.SmallerNumbersThanCurrent(nums))
 
 	//1512題
 	// nums := []int{1, 2, 3, 1, 1, 3}
