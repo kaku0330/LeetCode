@@ -78,6 +78,11 @@ package main
 // 	insertionSortList "LeetCode/147_Insertion_Sort_List"
 // 	"fmt"
 // )
+import (
+	reversewordsinastring "LeetCode/151_Reverse_Words_in_a_String"
+	"fmt"
+)
+
 // import (
 // 	minstack "LeetCode/155_Min_Stack"
 // 	"fmt"
@@ -129,10 +134,10 @@ package main
 // 	scoreOfParentheses "LeetCode/856_Score_of_Parentheses"
 // 	"fmt"
 // )
-import (
-	How_Many_Numbers_Are_Smaller_Than_the_Current_Number "LeetCode/1365_How_Many_Numbers_Are_Smaller_Than_the_Current_Number"
-	"fmt"
-)
+// import (
+// 	How_Many_Numbers_Are_Smaller_Than_the_Current_Number "LeetCode/1365_How_Many_Numbers_Are_Smaller_Than_the_Current_Number"
+// 	"fmt"
+// )
 
 // import (
 // 	numberofgoodpairs "LeetCode/1512_Number_of_Good_Pairs"
@@ -332,6 +337,12 @@ func main() {
 	// 	Next: &b,
 	// }
 	// fmt.Println(insertionSortList.InsertionSortList(&a))
+
+	//151題
+	s := "a good   example"
+	// s := " 3c      2zPeO dpIMVv2SG    1AM       o       VnUhxK a5YKNyuG     x9    EQ  ruJO       0Dtb8qG91w 1rT3zH F0m n G wU"
+	fmt.Println(reversewordsinastring.ReverseWords(s))
+
 	//155題
 	// minStack := minstack.Constructor()
 	// minStack.Push(2147483646)
@@ -427,8 +438,8 @@ func main() {
 	// fmt.Println(scoreOfParentheses.ScoreOfParentheses(s))
 
 	//1365題
-	nums := []int{8, 1, 2, 2, 3}
-	fmt.Println(How_Many_Numbers_Are_Smaller_Than_the_Current_Number.SmallerNumbersThanCurrent(nums))
+	// nums := []int{8, 1, 2, 2, 3}
+	// fmt.Println(How_Many_Numbers_Are_Smaller_Than_the_Current_Number.SmallerNumbersThanCurrent(nums))
 
 	//1512題
 	// nums := []int{1, 2, 3, 1, 1, 3}
