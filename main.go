@@ -78,10 +78,10 @@ package main
 // 	insertionSortList "LeetCode/147_Insertion_Sort_List"
 // 	"fmt"
 // )
-import (
-	reversewordsinastring "LeetCode/151_Reverse_Words_in_a_String"
-	"fmt"
-)
+// import (
+// 	reversewordsinastring "LeetCode/151_Reverse_Words_in_a_String"
+// 	"fmt"
+// )
 
 // import (
 // 	minstack "LeetCode/155_Min_Stack"
@@ -108,6 +108,11 @@ import (
 // palindromeLinkedList "LeetCode/234_Palindrome_Linked_List"
 // 	"fmt"
 // )
+// import (
+// 	reversewordsinastring "LeetCode/238_Product_of_Array_Except_Self"
+// 	"fmt"
+// )
+
 // import (
 // 	validanagram "LeetCode/242_Valid_Anagram"
 // 	"fmt"
@@ -147,6 +152,11 @@ import (
 // 	numberofstudentsunabletoeatlunch "LeetCode/1700_Number_of_Students_Unable_to_Eat_Lunch"
 // 	"fmt"
 // )
+import (
+	mergestringsalternately "LeetCode/1768_Merge_Strings_Alternately"
+	"fmt"
+)
+
 // import (
 // 	finalvalueofvariableafterperformingoperations "LeetCode/2011_Final_Value_of_Variable_After_Performing_Operations"
 // 	"fmt"
@@ -339,9 +349,9 @@ func main() {
 	// fmt.Println(insertionSortList.InsertionSortList(&a))
 
 	//151題
-	s := "a good   example"
+	// s := "a good   example"
 	// s := " 3c      2zPeO dpIMVv2SG    1AM       o       VnUhxK a5YKNyuG     x9    EQ  ruJO       0Dtb8qG91w 1rT3zH F0m n G wU"
-	fmt.Println(reversewordsinastring.ReverseWords(s))
+	// fmt.Println(reversewordsinastring.ReverseWords(s))
 
 	//155題
 	// minStack := minstack.Constructor()
@@ -412,6 +422,12 @@ func main() {
 	// }
 	// fmt.Println(palindromeLinkedList.IsPalindrome(&a))
 
+	//238題
+	// nums := []int{1, 2, 3, 4}
+	// nums := []int{-1, 1, 0, -3, 3}
+	// nums := []int{0, 4, 0}
+	// fmt.Println(reversewordsinastring.ProductExceptSelf(nums))
+
 	//242題
 	// s, t := "anagram", "nagaram"
 	// fmt.Println(validanagram.IsAnagram(s, t))
@@ -450,6 +466,10 @@ func main() {
 	// students, sandwiches := []int{1, 1, 1, 0, 0, 1}, []int{1, 0, 0, 0, 1, 1}
 	// fmt.Println(numberofstudentsunabletoeatlunch.CountStudents(students, sandwiches))
 
+	//1768題
+	word1 := "ab"
+	word2 := "pqrs"
+	fmt.Println(mergestringsalternately.MergeAlternately(word1, word2))
 	//2011題
 	// operations := []string{"X++", "++X", "--X", "X--"}
 	// fmt.Println(finalvalueofvariableafterperformingoperations.FinalValueAfterOperations(operations))
