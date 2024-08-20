@@ -143,6 +143,10 @@ package main
 // 	How_Many_Numbers_Are_Smaller_Than_the_Current_Number "LeetCode/1365_How_Many_Numbers_Are_Smaller_Than_the_Current_Number"
 // 	"fmt"
 // )
+import (
+	kidswiththegreatestnumberofcandies "LeetCode/1431_Kids_With_the_Greatest_Number_of_Candies"
+	"fmt"
+)
 
 // import (
 // 	numberofgoodpairs "LeetCode/1512_Number_of_Good_Pairs"
@@ -152,10 +156,10 @@ package main
 // 	numberofstudentsunabletoeatlunch "LeetCode/1700_Number_of_Students_Unable_to_Eat_Lunch"
 // 	"fmt"
 // )
-import (
-	mergestringsalternately "LeetCode/1768_Merge_Strings_Alternately"
-	"fmt"
-)
+// import (
+// 	mergestringsalternately "LeetCode/1768_Merge_Strings_Alternately"
+// 	"fmt"
+// )
 
 // import (
 // 	finalvalueofvariableafterperformingoperations "LeetCode/2011_Final_Value_of_Variable_After_Performing_Operations"
@@ -457,6 +461,11 @@ func main() {
 	// nums := []int{8, 1, 2, 2, 3}
 	// fmt.Println(How_Many_Numbers_Are_Smaller_Than_the_Current_Number.SmallerNumbersThanCurrent(nums))
 
+	//1431題
+	candies := []int{2, 3, 5, 1, 3}
+	extraCandies := 3
+	fmt.Println(kidswiththegreatestnumberofcandies.KidsWithCandies(candies, extraCandies))
+
 	//1512題
 	// nums := []int{1, 2, 3, 1, 1, 3}
 	// fmt.Println(numberofgoodpairs.NumIdenticalPairs(nums))
@@ -467,9 +476,9 @@ func main() {
 	// fmt.Println(numberofstudentsunabletoeatlunch.CountStudents(students, sandwiches))
 
 	//1768題
-	word1 := "ab"
-	word2 := "pqrs"
-	fmt.Println(mergestringsalternately.MergeAlternately(word1, word2))
+	// word1 := "ab"
+	// word2 := "pqrs"
+	// fmt.Println(mergestringsalternately.MergeAlternately(word1, word2))
 	//2011題
 	// operations := []string{"X++", "++X", "--X", "X--"}
 	// fmt.Println(finalvalueofvariableafterperformingoperations.FinalValueAfterOperations(operations))
