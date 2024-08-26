@@ -117,6 +117,12 @@ package main
 // 	validanagram "LeetCode/242_Valid_Anagram"
 // 	"fmt"
 // )
+
+// import (
+// 	increasingtripletsubsequence "LeetCode/334_Increasing_Triplet_Subsequence"
+// 	"fmt"
+// )
+
 // import (
 // 	firstuniquecharacterinastring "LeetCode/387_First_Unique_Character_in_a_String"
 // 	"fmt"
@@ -139,14 +145,20 @@ package main
 // 	scoreOfParentheses "LeetCode/856_Score_of_Parentheses"
 // 	"fmt"
 // )
+
+// import (
+// 	greatestcommondivisorofstrings "LeetCode/1071_Greatest_Common_Divisor_of_Strings"
+// 	"fmt"
+// )
+
 // import (
 // 	How_Many_Numbers_Are_Smaller_Than_the_Current_Number "LeetCode/1365_How_Many_Numbers_Are_Smaller_Than_the_Current_Number"
 // 	"fmt"
 // )
-import (
-	kidswiththegreatestnumberofcandies "LeetCode/1431_Kids_With_the_Greatest_Number_of_Candies"
-	"fmt"
-)
+// import (
+// kidswiththegreatestnumberofcandies "LeetCode/1431_Kids_With_the_Greatest_Number_of_Candies"
+// "fmt"
+// )
 
 // import (
 // 	numberofgoodpairs "LeetCode/1512_Number_of_Good_Pairs"
@@ -160,6 +172,11 @@ import (
 // 	mergestringsalternately "LeetCode/1768_Merge_Strings_Alternately"
 // 	"fmt"
 // )
+
+import (
+	findgreatestcommondivisorofarray "LeetCode/1979_Find_Greatest_Common_Divisor_of_Array"
+	"fmt"
+)
 
 // import (
 // 	finalvalueofvariableafterperformingoperations "LeetCode/2011_Final_Value_of_Variable_After_Performing_Operations"
@@ -436,6 +453,10 @@ func main() {
 	// s, t := "anagram", "nagaram"
 	// fmt.Println(validanagram.IsAnagram(s, t))
 
+	//334題
+	// nums := []int{2, 4, -2, -3}
+	// fmt.Println(increasingtripletsubsequence.IncreasingTriplet(nums))
+
 	//387題
 	// s := "leetcode"
 	// fmt.Println(firstuniquecharacterinastring.FirstUniqChar(s))
@@ -457,14 +478,19 @@ func main() {
 	// s := "(()(()))"
 	// fmt.Println(scoreOfParentheses.ScoreOfParentheses(s))
 
+	//1071題
+	// str1 := "ABCDEF"
+	// str2 := "ABC"
+	// fmt.Println(greatestcommondivisorofstrings.GcdOfStrings(str1, str2))
+
 	//1365題
 	// nums := []int{8, 1, 2, 2, 3}
 	// fmt.Println(How_Many_Numbers_Are_Smaller_Than_the_Current_Number.SmallerNumbersThanCurrent(nums))
 
 	//1431題
-	candies := []int{2, 3, 5, 1, 3}
-	extraCandies := 3
-	fmt.Println(kidswiththegreatestnumberofcandies.KidsWithCandies(candies, extraCandies))
+	// candies := []int{2, 3, 5, 1, 3}
+	// extraCandies := 3
+	// fmt.Println(kidswiththegreatestnumberofcandies.KidsWithCandies(candies, extraCandies))
 
 	//1512題
 	// nums := []int{1, 2, 3, 1, 1, 3}
@@ -479,6 +505,11 @@ func main() {
 	// word1 := "ab"
 	// word2 := "pqrs"
 	// fmt.Println(mergestringsalternately.MergeAlternately(word1, word2))
+
+	//1979題
+	nums := []int{2, 5, 6, 9, 10}
+	fmt.Println(findgreatestcommondivisorofarray.FindGCD(nums))
+
 	//2011題
 	// operations := []string{"X++", "++X", "--X", "X--"}
 	// fmt.Println(finalvalueofvariableafterperformingoperations.FinalValueAfterOperations(operations))
