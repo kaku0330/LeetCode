@@ -146,10 +146,10 @@ package main
 // 	"fmt"
 // )
 
-// import (
-// 	greatestcommondivisorofstrings "LeetCode/1071_Greatest_Common_Divisor_of_Strings"
-// 	"fmt"
-// )
+import (
+	greatestcommondivisorofstrings "LeetCode/1071_Greatest_Common_Divisor_of_Strings"
+	"fmt"
+)
 
 // import (
 // 	How_Many_Numbers_Are_Smaller_Than_the_Current_Number "LeetCode/1365_How_Many_Numbers_Are_Smaller_Than_the_Current_Number"
@@ -173,10 +173,10 @@ package main
 // 	"fmt"
 // )
 
-import (
-	findgreatestcommondivisorofarray "LeetCode/1979_Find_Greatest_Common_Divisor_of_Array"
-	"fmt"
-)
+// import (
+// 	findgreatestcommondivisorofarray "LeetCode/1979_Find_Greatest_Common_Divisor_of_Array"
+// 	"fmt"
+// )
 
 // import (
 // 	finalvalueofvariableafterperformingoperations "LeetCode/2011_Final_Value_of_Variable_After_Performing_Operations"
@@ -479,9 +479,9 @@ func main() {
 	// fmt.Println(scoreOfParentheses.ScoreOfParentheses(s))
 
 	//1071題
-	// str1 := "ABCDEF"
-	// str2 := "ABC"
-	// fmt.Println(greatestcommondivisorofstrings.GcdOfStrings(str1, str2))
+	str1 := "ABCDEF"
+	str2 := "ABC"
+	fmt.Println(greatestcommondivisorofstrings.GcdOfStrings(str1, str2))
 
 	//1365題
 	// nums := []int{8, 1, 2, 2, 3}
@@ -507,8 +507,8 @@ func main() {
 	// fmt.Println(mergestringsalternately.MergeAlternately(word1, word2))
 
 	//1979題
-	nums := []int{2, 5, 6, 9, 10}
-	fmt.Println(findgreatestcommondivisorofarray.FindGCD(nums))
+	// nums := []int{2, 5, 6, 9, 10}
+	// fmt.Println(findgreatestcommondivisorofarray.FindGCD(nums))
 
 	//2011題
 	// operations := []string{"X++", "++X", "--X", "X--"}
