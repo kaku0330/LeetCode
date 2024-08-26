@@ -132,6 +132,12 @@ package main
 // 	decodestring "LeetCode/394_Decode_String"
 // 	"fmt"
 // )
+
+import (
+	canplaceflowers "LeetCode/605_Can_Place_Flowers"
+	"fmt"
+)
+
 // import (
 // 	baseballgame "LeetCode/682_Baseball_Game"
 // 	"fmt"
@@ -146,10 +152,10 @@ package main
 // 	"fmt"
 // )
 
-import (
-	greatestcommondivisorofstrings "LeetCode/1071_Greatest_Common_Divisor_of_Strings"
-	"fmt"
-)
+// import (
+// 	greatestcommondivisorofstrings "LeetCode/1071_Greatest_Common_Divisor_of_Strings"
+// 	"fmt"
+// )
 
 // import (
 // 	How_Many_Numbers_Are_Smaller_Than_the_Current_Number "LeetCode/1365_How_Many_Numbers_Are_Smaller_Than_the_Current_Number"
@@ -465,6 +471,11 @@ func main() {
 	// s := "3[a]2[bc]"
 	// fmt.Println(decodestring.DecodeString(s))
 
+	//605題
+	flowerbed := []int{1, 0, 0, 0, 1}
+	n := 1
+	fmt.Println(canplaceflowers.CanPlaceFlowers(flowerbed, n))
+
 	//682題
 	// operations := []string{"5", "2", "C", "D", "+"}
 	// fmt.Println(baseballgame.CalPoints(operations))
@@ -479,9 +490,9 @@ func main() {
 	// fmt.Println(scoreOfParentheses.ScoreOfParentheses(s))
 
 	//1071題
-	str1 := "ABCDEF"
-	str2 := "ABC"
-	fmt.Println(greatestcommondivisorofstrings.GcdOfStrings(str1, str2))
+	// str1 := "ABCDEF"
+	// str2 := "ABC"
+	// fmt.Println(greatestcommondivisorofstrings.GcdOfStrings(str1, str2))
 
 	//1365題
 	// nums := []int{8, 1, 2, 2, 3}
