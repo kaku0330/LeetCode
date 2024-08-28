@@ -123,6 +123,11 @@ package main
 // 	"fmt"
 // )
 
+import (
+	reversevowelsofastring "LeetCode/345_Reverse_Vowels_of_a_String"
+	"fmt"
+)
+
 // import (
 // 	firstuniquecharacterinastring "LeetCode/387_First_Unique_Character_in_a_String"
 // 	"fmt"
@@ -133,10 +138,10 @@ package main
 // 	"fmt"
 // )
 
-import (
-	canplaceflowers "LeetCode/605_Can_Place_Flowers"
-	"fmt"
-)
+// import (
+// 	canplaceflowers "LeetCode/605_Can_Place_Flowers"
+// 	"fmt"
+// )
 
 // import (
 // 	baseballgame "LeetCode/682_Baseball_Game"
@@ -463,6 +468,10 @@ func main() {
 	// nums := []int{2, 4, -2, -3}
 	// fmt.Println(increasingtripletsubsequence.IncreasingTriplet(nums))
 
+	//345題
+	s := "hello"
+	fmt.Println(reversevowelsofastring.ReverseVowels(s))
+
 	//387題
 	// s := "leetcode"
 	// fmt.Println(firstuniquecharacterinastring.FirstUniqChar(s))
@@ -472,9 +481,9 @@ func main() {
 	// fmt.Println(decodestring.DecodeString(s))
 
 	//605題
-	flowerbed := []int{1, 0, 0, 0, 1}
-	n := 1
-	fmt.Println(canplaceflowers.CanPlaceFlowers(flowerbed, n))
+	// flowerbed := []int{1, 0, 0, 0, 1}
+	// n := 1
+	// fmt.Println(canplaceflowers.CanPlaceFlowers(flowerbed, n))
 
 	//682題
 	// operations := []string{"5", "2", "C", "D", "+"}
