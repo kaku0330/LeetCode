@@ -123,10 +123,10 @@ package main
 // 	"fmt"
 // )
 
-import (
-	reversevowelsofastring "LeetCode/345_Reverse_Vowels_of_a_String"
-	"fmt"
-)
+// import (
+// 	reversevowelsofastring "LeetCode/345_Reverse_Vowels_of_a_String"
+// 	"fmt"
+// )
 
 // import (
 // 	firstuniquecharacterinastring "LeetCode/387_First_Unique_Character_in_a_String"
@@ -197,6 +197,12 @@ import (
 // 	maximumnumberofwordsfoundinsentences "LeetCode/2114_Maximum_Number_of_Words_Found_in_Sentences"
 // 	"fmt"
 // )
+
+import (
+	removingstarsfromastring "LeetCode/2390_Removing_Stars_From_a_String"
+	"fmt"
+)
+
 // import (
 // 	sortvowelsinastring "LeetCode/2785_Sort_Vowels_in_a_String"
 // 	"fmt"
@@ -469,8 +475,8 @@ func main() {
 	// fmt.Println(increasingtripletsubsequence.IncreasingTriplet(nums))
 
 	//345題
-	s := "hello"
-	fmt.Println(reversevowelsofastring.ReverseVowels(s))
+	// s := "hello"
+	// fmt.Println(reversevowelsofastring.ReverseVowels(s))
 
 	//387題
 	// s := "leetcode"
@@ -537,6 +543,10 @@ func main() {
 	//2114題
 	// sentences := []string{"alice and bob love leetcode", "i think so too", "this is great thanks very much"}
 	// fmt.Println(maximumnumberofwordsfoundinsentences.MostWordsFound(sentences))
+
+	//2390題
+	s := "leet**cod*e"
+	fmt.Println(removingstarsfromastring.RemoveStars(s))
 
 	//2785題
 	// s := "lEetcOde"
