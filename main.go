@@ -118,6 +118,11 @@ package main
 // 	"fmt"
 // )
 
+import (
+	movezeroes "LeetCode/283_Move_Zeroes"
+	"fmt"
+)
+
 // import (
 // 	increasingtripletsubsequence "LeetCode/334_Increasing_Triplet_Subsequence"
 // 	"fmt"
@@ -198,10 +203,10 @@ package main
 // 	"fmt"
 // )
 
-import (
-	removingstarsfromastring "LeetCode/2390_Removing_Stars_From_a_String"
-	"fmt"
-)
+// import (
+// 	removingstarsfromastring "LeetCode/2390_Removing_Stars_From_a_String"
+// 	"fmt"
+// )
 
 // import (
 // 	sortvowelsinastring "LeetCode/2785_Sort_Vowels_in_a_String"
@@ -470,6 +475,10 @@ func main() {
 	// s, t := "anagram", "nagaram"
 	// fmt.Println(validanagram.IsAnagram(s, t))
 
+	//283題
+	nums := []int{0, 1, 0, 3, 12}
+	fmt.Println(movezeroes.MoveZeroes(nums))
+
 	//334題
 	// nums := []int{2, 4, -2, -3}
 	// fmt.Println(increasingtripletsubsequence.IncreasingTriplet(nums))
@@ -545,8 +554,8 @@ func main() {
 	// fmt.Println(maximumnumberofwordsfoundinsentences.MostWordsFound(sentences))
 
 	//2390題
-	s := "leet**cod*e"
-	fmt.Println(removingstarsfromastring.RemoveStars(s))
+	// s := "leet**cod*e"
+	// fmt.Println(removingstarsfromastring.RemoveStars(s))
 
 	//2785題
 	// s := "lEetcOde"
