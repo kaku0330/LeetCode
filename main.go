@@ -118,10 +118,10 @@ package main
 // 	"fmt"
 // )
 
-import (
-	movezeroes "LeetCode/283_Move_Zeroes"
-	"fmt"
-)
+// import (
+// 	movezeroes "LeetCode/283_Move_Zeroes"
+// 	"fmt"
+// )
 
 // import (
 // 	increasingtripletsubsequence "LeetCode/334_Increasing_Triplet_Subsequence"
@@ -142,6 +142,11 @@ import (
 // 	decodestring "LeetCode/394_Decode_String"
 // 	"fmt"
 // )
+
+import (
+	firstmissingpositive "LeetCode/41_First_Missing_Positive"
+	"fmt"
+)
 
 // import (
 // 	canplaceflowers "LeetCode/605_Can_Place_Flowers"
@@ -336,6 +341,11 @@ func main() {
 	//38
 	// n := 1
 	// fmt.Println(countandsay.CountAndSay(n))
+
+	//41題
+	nums := []int{1, 2, 0}
+	fmt.Println(firstmissingpositive.FirstMissingPositive(nums))
+
 	//49題
 	// strs := []string{"eat", "tea", "tan", "ate", "nat", "bat"}
 	// fmt.Println(groupanagrams.GroupAnagrams(strs))
@@ -476,8 +486,8 @@ func main() {
 	// fmt.Println(validanagram.IsAnagram(s, t))
 
 	//283題
-	nums := []int{0, 1, 0, 3, 12}
-	fmt.Println(movezeroes.MoveZeroes(nums))
+	// nums := []int{0, 1, 0, 3, 12}
+	// fmt.Println(movezeroes.MoveZeroes(nums))
 
 	//334題
 	// nums := []int{2, 4, -2, -3}
