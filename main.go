@@ -47,6 +47,11 @@ package main
 // )
 
 // import (
+// 	firstmissingpositive "LeetCode/41_First_Missing_Positive"
+// 	"fmt"
+// )
+
+// import (
 // 	groupanagrams "LeetCode/49_Group_Anagrams"
 // 	"fmt"
 // )
@@ -96,8 +101,8 @@ package main
 // 	"fmt"
 // )
 // import (
-// 	basiccalculator "LeetCode/224_Basic_Calculator"
-// 	"fmt"
+// basiccalculator "LeetCode/224_Basic_Calculator"
+// "fmt"
 // )
 
 // import (
@@ -142,11 +147,6 @@ package main
 // 	decodestring "LeetCode/394_Decode_String"
 // 	"fmt"
 // )
-
-import (
-	firstmissingpositive "LeetCode/41_First_Missing_Positive"
-	"fmt"
-)
 
 // import (
 // 	canplaceflowers "LeetCode/605_Can_Place_Flowers"
@@ -193,6 +193,11 @@ import (
 // 	mergestringsalternately "LeetCode/1768_Merge_Strings_Alternately"
 // 	"fmt"
 // )
+
+import (
+	concatenationofarray "LeetCode/1929_Concatenation_of_Array"
+	"fmt"
+)
 
 // import (
 // 	findgreatestcommondivisorofarray "LeetCode/1979_Find_Greatest_Common_Divisor_of_Array"
@@ -343,8 +348,8 @@ func main() {
 	// fmt.Println(countandsay.CountAndSay(n))
 
 	//41題
-	nums := []int{1, 2, 0}
-	fmt.Println(firstmissingpositive.FirstMissingPositive(nums))
+	// nums := []int{1, 2, 0}
+	// fmt.Println(firstmissingpositive.FirstMissingPositive(nums))
 
 	//49題
 	// strs := []string{"eat", "tea", "tan", "ate", "nat", "bat"}
@@ -433,6 +438,7 @@ func main() {
 	//224題
 	// s := "(1+(4+5+2)-3)+(6+8)"
 	// s := "1+1"
+	// s := " 2-1 + 2 "
 	// fmt.Println(basiccalculator.Calculate(s))
 
 	//225題
@@ -550,6 +556,10 @@ func main() {
 	// word1 := "ab"
 	// word2 := "pqrs"
 	// fmt.Println(mergestringsalternately.MergeAlternately(word1, word2))
+
+	//1929題
+	nums := []int{1, 2, 1}
+	fmt.Println(concatenationofarray.GetConcatenation(nums))
 
 	//1979題
 	// nums := []int{2, 5, 6, 9, 10}
